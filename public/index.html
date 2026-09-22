@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eceef2" />
+    <title>Message Muncher</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+      <canvas id="game" aria-label="Message Muncher game world"></canvas>
+      <header class="brand panel"><div class="logo">M</div><div><h1>MESSAGE<br><span>MUNCHER</span></h1><p id="player-count">Entering the world…</p></div></header>
+      <div id="status" class="status panel" data-kind="loading">Loading…</div>
+      <aside class="leaderboard panel"><div class="eyebrow">WORLD LEADERS</div><ol id="leaderboard"></ol></aside>
+      <section id="profile" class="profile panel" hidden>
+        <img id="profile-avatar" hidden />
+        <div id="profile-fallback" class="profile-fallback"></div>
+        <div><small id="profile-mode">PLAYING AS</small><strong id="profile-name"></strong></div>
+      </section>
+      <section class="score panel"><div><span id="score">0</span><small>MESSAGES<br>MUNCHED</small></div><p>Move with <kbd>WASD</kbd> or <kbd>ARROW KEYS</kbd></p></section>
+    </main>
+    <script type="module" src="/client.js"></script>
+  </body>
+</html>
